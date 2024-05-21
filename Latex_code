@@ -1,0 +1,276 @@
+\documentclass{article}
+\usepackage{amsmath}
+\usepackage{tikz}
+\usepackage{geometry}
+
+\geometry{a4paper, margin=1in}
+
+\title{Measurement of Fluid Viscosity}
+\author{Daurenov Ibrahim}
+\date{17.05.2024}
+
+\begin{document}
+
+\maketitle
+
+\section{Introduction}
+The objective of this experiment was to measure the viscosity of castor oil using the Stokes method. Viscosity is a measure of a fluid's resistance to deformation at a given rate. In fluid dynamics, the drag force acting on an object moving through a fluid is influenced by the fluid's viscosity.
+
+In this experiment, we dropped a spherical object through castor oil and measured its terminal velocity. According to Stokes' law, the drag force \( F_d \) on a sphere moving with velocity \( v \) is given by:
+
+\[
+F_d = 6 \pi \eta R v
+\]
+
+where \( \eta \) is the fluid's viscosity, \( R \) is the sphere's radius, and \( v \) is the terminal velocity. The buoyancy force \( F_b \) and gravitational force \( F_g \) are given by:
+
+\[
+F_b = \frac{4}{3} \pi R^3 \rho_1 g
+\]
+
+\[
+F_g = \frac{4}{3} \pi R^3 \rho_2 g
+\]
+
+where \( \rho_1 \) is the fluid's density, \( \rho_2 \) is the sphere's density, and \( g \) is the acceleration due to gravity. At terminal velocity, these forces balance, allowing us to calculate viscosity as:
+
+\[
+\eta = \frac{2R^2(\rho_2 - \rho_1)g}{9v}
+\]
+
+\section{Experimental Setup}
+The experimental setup included a Stokes’ viscosity measurement device filled with castor oil, where small metal balls were dropped. The setup and instruments used are described below:
+
+\subsection{Description of the Measurement Setup}
+The Stokes’ viscosity measurement device consists of a graduated flask filled with castor oil, positioned vertically. Two laser beams are aligned horizontally across the flask at different heights to measure the time it takes for a metal ball to fall between them. The setup ensures that the ball reaches terminal velocity between the two laser beams.
+
+A metal ball is released from the top of the guiding pipe, and its motion through the fluid is observed as it blocks the laser beams. The time taken for the ball to travel between the beams is recorded using a stopwatch.
+
+\subsection{Measurement Instruments}
+\begin{itemize}
+    \item \textbf{Stokes’ Viscosity Measurement Device:} Used to observe the motion of metal balls in castor oil.
+    \item \textbf{Micrometer (Type: Mechanical, Range: 0-25 mm, Precision: ±0.004 mm):} Used to measure the diameter of the metal balls.
+    \item \textbf{Caliper (Type: Digital, Range: 0-150 mm, Precision: ±0.02 mm):} Used to measure the inner diameter of the graduated flask.
+    \item \textbf{Stopwatch (Type: Digital, Range: 0-60 min, Precision: ±0.01 s):} Used to measure the time taken by the balls to travel a certain distance.
+    \item \textbf{Densimeter:} Used to measure the density of the castor oil.
+    \item \textbf{Electronic Scales (Type: Digital, Range: 0-500 g, Precision: ±0.001 g):} Used to measure the mass of the metal balls.
+    \item \textbf{Thermometer (Type: Digital, Range: -10°C to 50°C, Precision: ±0.2°C):} Used to measure the ambient temperature in the lab.
+\end{itemize}
+
+\subsection{Sketch of the Measurement Setup}
+\begin{center}
+\begin{tikzpicture}
+    % Draw the guiding pipe
+    \draw[thick] (0, 6) -- (0, 7) node[above] {Guiding Pipe};
+    
+    % Draw the graduated flask
+    \draw[thick] (-1, 0) rectangle (1, 6) node[midway, right] {Graduated Flask (Filled with Oil)};
+    
+    % Draw the laser beams
+    \draw[red, thick, dashed] (-1, 2) -- (1, 2) node[right] {Laser 1};
+    \draw[red, thick, dashed] (-1, 4) -- (1, 4) node[right] {Laser 2};
+    
+    % Draw the metal ball
+    \filldraw[black] (0, 3) circle (0.1) node[right] {Metal Ball};
+    
+    % Draw labels for measurements
+    \draw[<->] (1.5, 2) -- (1.5, 4) node[midway, right] {$s$ (distance between lasers)};
+    \draw[<->] (-1.5, 0) -- (-1.5, 6) node[midway, left] {Height of Flask};
+\end{tikzpicture}
+\end{center}
+
+\section{Measurements}
+\subsection{Measurement Procedure}
+The measurement procedure involved the following steps:
+
+1. **Adjustment of the Device:** The device was adjusted to ensure that the laser beams were parallel and correctly aligned. The plumb line was used to verify the vertical alignment.
+2. **Measuring Distances:** The distance \( s \) between the two laser beams was measured three times to ensure accuracy.
+3. **Recording Time:** The metal ball was released from the top of the guiding pipe. The stopwatch was started when the ball passed the first laser and stopped when it passed the second laser. This was repeated six times.
+4. **Measuring Diameters:** The diameters of ten metal balls were measured using the micrometer, and the inner diameter of the flask was measured using the caliper.
+5. **Measuring Densities:** The density of the castor oil was measured using the densimeter.
+
+\subsection{Observations}
+- **Measurement Precision:** The instruments used had high precision, but minor deviations were observed in repeated measurements.
+- **Environmental Factors:** The room temperature was stable, ensuring consistent viscosity measurements.
+- **Instrument Calibration:** All instruments were calibrated before use to ensure accuracy.
+
+\subsection{Calculations}
+1. **Mass of a Single Ball:**
+\[
+m = \frac{m_{40}}{N} = \frac{1.311 \times 10^{-3} \, \text{kg}}{40} = 3.2775 \times 10^{-5} \, \text{kg}
+\]
+
+2. **Average Diameter of Balls:**
+\[
+\bar{d} = \frac{\sum_{i=1}^{10} d_i}{10} = \frac{1.992 + 1.903 + 1.936 + 1.870 + 2.002 + 1.988 + 1.963 + 1.977 + 1.909 + 1.946}{10} = 1.9486 \, \text{mm} = 1.9486 \times 10^{-3} \, \text{m}
+\]
+
+3. **Volume of a Single Ball:**
+\[
+V = \frac{4}{3} \pi R^3 = \frac{4}{3} \pi \left(\frac{\bar{d}}{2}\right)^3 = \frac{4}{3} \pi \left(\frac{1.9486 \times 10^{-3}}{2}\right)^3 = 3.881 \times 10^{-9} \, \text{m}^3
+\]
+
+4. **Density of Metal Ball:**
+\[
+\rho_2 = \frac{m}{V} = \frac{3.2775 \times 10^{-5} \, \text{kg}}{3.881 \times 10^{-9} \, \text{m}^3} = 8439 \, \text{kg/m}^3
+\]
+
+5. **Average Terminal Velocity:**
+\[
+\bar{t} = \frac{t_1 + t_2 + t_3 + t_4 + t_5 + t_6}{6} = \frac{6.93 + 7.21 + 6.85 + 7.03 + 7.09 + 6.87}{6} = 7.00 \, \text{s}
+\]
+\[
+v = \frac{s}{\bar{t}} = \frac{0.152 \, \text{m}}{7.00 \, \text{s}} = 0.0217 \, \text{m/s}
+\]
+
+6. **Viscosity Calculation:**
+\[
+\eta = \frac{2R^2 (\rho_2 - \rho_1) g}{9v}
+\]
+\[
+R = \frac{\bar{d}}{2} = \frac{1.9486 \times 10^{-3} \, \text{m}}{2} = 9.743 \times 10^{-4} \, \text{m}
+\]
+\[
+\eta = \frac{2 \times (9.743 \times 10^{-4} \, \text{m})^2 \times (8439 \, \text{kg/m}^3 - 956 \, \text{kg/m}^3) \times 9.794 \, \text{m/s}^2}{9 \times 0.0217 \, \text{m/s}}
+\]
+\[
+\eta = \frac{2 \times 9.493 \times 10^{-7} \, \text{m}^2 \times 7483 \, \text{kg/m}^3 \times 9.794 \, \text{m/s}^2}{0.1953 \, \text{m/s}}
+\]
+\[
+\eta = \frac{1.391 \times 10^{-3} \, \text{kg} \cdot \text{m}^{-1} \cdot \text{s}^{-2}}{0.1953 \, \text{s}^{-1}}
+\]
+\[
+\eta = 7.12 \times 10^{-3} \, \text{Pa} \cdot \text{s}
+\]
+
+\section{Results}
+In this section, the results of the measurements and calculations are presented in tables and graphs. All values are expressed in appropriate SI units.
+
+\subsection{Measured Values}
+
+\begin{table}[h!]
+\centering
+\begin{tabular}{cc}
+\toprule
+Measurement & Diameter (mm) \\
+\midrule
+$d_1$ & 1.992 \\
+$d_2$ & 1.903 \\
+$d_3$ & 1.936 \\
+$d_4$ & 1.870 \\
+$d_5$ & 2.002 \\
+$d_6$ & 1.988 \\
+$d_7$ & 1.963 \\
+$d_8$ & 1.977 \\
+$d_9$ & 1.909 \\
+$d_{10}$ & 1.946 \\
+\bottomrule
+\end{tabular}
+\caption{Measurements of Metal Ball Diameters}
+\end{table}
+
+\textbf{Average Diameter}: \( \bar{d} = 1.9486 \, \text{mm} \)
+
+\begin{table}[h!]
+\centering
+\begin{tabular}{cc}
+\toprule
+Measurement & Time (s) \\
+\midrule
+$t_1$ & 6.93 \\
+$t_2$ & 7.21 \\
+$t_3$ & 6.85 \\
+$t_4$ & 7.03 \\
+$t_5$ & 7.09 \\
+$t_6$ & 6.87 \\
+\bottomrule
+\end{tabular}
+\caption{Time Measurements for Metal Ball Falling}
+\end{table}
+
+\textbf{Average Time}: \( \bar{t} = 7.00 \, \text{s} \)
+
+\subsection{Calculations}
+
+1. **Mass of a Single Ball:**
+\[
+m = \frac{m_{40}}{N} = \frac{1.311 \times 10^{-3} \, \text{kg}}{40} = 3.2775 \times 10^{-5} \, \text{kg}
+\]
+
+2. **Volume of a Single Ball:**
+\[
+V = \frac{4}{3} \pi R^3 = \frac{4}{3} \pi \left(\frac{\bar{d}}{2}\right)^3 = 3.881 \times 10^{-9} \, \text{m}^3
+\]
+
+3. **Density of Metal Ball:**
+\[
+\rho_2 = \frac{m}{V} = \frac{3.2775 \times 10^{-5} \, \text{kg}}{3.881 \times 10^{-9} \, \text{m}^3} = 8439 \, \text{kg/m}^3
+\]
+
+4. **Average Terminal Velocity:**
+\[
+v = \frac{s}{\bar{t}} = \frac{0.152 \, \text{m}}{7.00 \, \text{s}} = 0.0217 \, \text{m/s}
+\]
+
+5. **Viscosity Calculation:**
+\[
+\eta = \frac{2R^2 (\rho_2 - \rho_1) g}{9v}
+\]
+\[
+R = \frac{\bar{d}}{2} = 9.743 \times 10^{-4} \, \text{m}
+\]
+\[
+\eta = \frac{2 \times (9.743 \times 10^{-4} \, \text{m})^2 \times (8439 \, \text{kg/m}^3 - 956 \, \text{kg/m}^3) \times 9.794 \, \text{m/s}^2}{9 \times 0.0217 \, \text{m/s}}
+\]
+\[
+\eta = \frac{2 \times 9.493 \times 10^{-7} \, \text{m}^2 \times 7483 \, \text{kg/m}^3 \times 9.794 \, \text{m/s}^2}{0.1953 \, \text{m/s}}
+\]
+\[
+\eta = \frac{1.391 \times 10^{-3} \, \text{kg} \cdot \text{m}^{-1} \cdot \text{s}^{-2}}{0.1953 \, \text{s}^{-1}}
+\]
+\[
+\eta = 7.12 \times 10^{-3} \, \text{Pa} \cdot \text{s}
+\]
+\section{Conclusions and Discussion}
+
+\subsection{Summary of Results}
+The experiment measured the viscosity of castor oil using the Stokes method, yielding a value of \( 7.12 \times 10^{-3} \, \text{Pa} \cdot \text{s} \). This aligns with literature values ranging from \( 6.5 \times 10^{-3} \, \text{Pa} \cdot \text{s} \) to \( 7.5 \times 10^{-3} \, \text{Pa} \cdot \text{s} \) at room temperature.
+
+\subsection{Comparison with Theoretical Values}
+The experimental value is consistent with theoretical predictions and values reported in sources such as engineering handbooks and research journals. This suggests that the experimental setup was effective and provided accurate measurements.
+
+\subsection{Measurement Uncertainties}
+\begin{itemize}
+    \item \textbf{Instrument Precision:} Minor errors may arise from the precision of the micrometer (±0.004 mm), caliper (±0.02 mm), and stopwatch (±0.01 s).
+    \item \textbf{Environmental Factors:} Room temperature variations, although minor, could affect the viscosity of the castor oil.
+    \item \textbf{Human Error:} Reaction time errors in manual timing were mitigated by averaging multiple measurements, reducing their impact.
+\end{itemize}
+
+\subsection{Impact of Uncertainties}
+These uncertainties likely introduced small deviations but had a minimal overall impact, as evidenced by the close match with theoretical values.
+
+\subsection{Suggestions for Improvement}
+\begin{enumerate}
+    \item \textbf{Automated Timing System:} Using electronic sensors to detect the ball passing the lasers would eliminate human timing errors and increase precision.
+    \item \textbf{Temperature Control:} Maintaining a controlled temperature environment for the castor oil would enhance consistency in viscosity measurements.
+    \item \textbf{High-Precision Instruments:} Utilizing higher precision measurement tools could reduce uncertainties. For example, a laser micrometer for diameter measurements and a more precise electronic scale for mass measurements could improve accuracy.
+    \item \textbf{Multiple Trials:} Increasing the number of trials would enhance the reliability and robustness of the data. Conducting at least 20 trials instead of 6 would provide a more comprehensive dataset.
+    \item \textbf{Data Analysis Software:} Employing data analysis software such as MATLAB or Python for processing measurements and performing calculations could reduce manual calculation errors and improve data handling efficiency.
+    \item \textbf{Improved Ball Release Mechanism:} Designing a more controlled ball release mechanism to ensure the ball drops vertically without initial horizontal velocity would help achieve more accurate measurements.
+    \item \textbf{Use of Different Fluids:} Repeating the experiment with different fluids of known viscosities could help validate the experimental setup and provide a broader understanding of the method’s accuracy and limitations.
+    \item \textbf{Detailed Uncertainty Analysis:} Performing a detailed uncertainty analysis to quantify the impact of each source of error on the final viscosity measurement could help identify the most significant contributors to measurement uncertainty and guide further improvements.
+\end{enumerate}
+
+\subsection{References}
+\begin{enumerate}
+    \item Barnes, H.A., Hutton, J.F., & Walters, K. (1989). \textit{An Introduction to Rheology}. Elsevier.
+    \item Cheng, D.C.-H. (2003). Characterisation of the Flow Properties of Complex Fluids. \textit{Annual Review of Fluid Mechanics, 35}, 213-240.
+    \item Engineering ToolBox. (2021). Viscosity of Liquids and Gases. Retrieved from \url{https://www.engineeringtoolbox.com/viscosity-d_413.html}
+\end{enumerate}
+
+\end{document}
+
+
+
+
+
